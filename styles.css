@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Righteous;
 }
 
 body{
-    background-color: black;
+    background-color: #292828;
 }
 
 .cabecalho{
     display: flex;
     justify-content: start;
     align-items: center;
-    background-color: white;
+    background-color: #474645;
+    border-bottom: rgb(102, 102, 102) solid 2px;
+
+    font-size: 20px;
 
     width: 100%;
     height: 60px;
@@ -23,11 +30,11 @@ body{
 
 .item a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .item a:hover{
-    text-decoration: underline;
+    text-shadow: 0 0 5px white;
 }
 
 .x{
@@ -38,49 +45,111 @@ body{
     display: flex;
 }
 
-.back_search{
-    background-color: black;
-    width: 250px;
-    height: 35px;
-    border-radius: 20px;
+.login{
+    margin-left: 650px;
+}
+
+.sigin_steam{
+    border-radius: 4px;
+    border: unset;
+    background-color: rgb(189, 157, 78);
+    padding: 10px 18px;
+    color: white;
     display: flex;
     align-items: center;
 }
 
-.search{
-    background-color: black;
-    width: 78%;
-    color: white;
-    margin-left: 10px;
-    border: none;
-}
-
-.search textarea:focus, input:focus, select:focus {
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
-} 
-
-.lupa{
-    margin-top: 5px;
-    margin-left: 7px;
-}
-
-.sobre{
-    margin-left: 480px;
-}
-
-.sobre a{
-    text-decoration: none;
-    color: black;
-}
-
-.sobre a:hover{
-    text-decoration: underline;
-}
-
-.destaques{
+.slide{
     display: flex;
     justify-content: center;
     margin: 10px;
+    font-size: 32px;
+    color: white;
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 140%;
+    width: 120%;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: transparent;
+    border: 3px rgb(255, 255, 255) solid;
+    border-radius: 50%;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider label:hover{
+    background-color: white;
+}
+
+.slider li input:checked ~label{
+    background-color: white;
+}
+
+.slider li:nth-child(1) label {
+    left: 15px;
+    bottom: 12px;
+}
+
+.slider li:nth-child(2) label {
+    left: 45px;
+    bottom: 11px;
+}
+
+.slider li:nth-child(3) label {
+    left: 75px;
+    bottom: 13px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.anivia{
+    box-shadow:  0 0 20px rgb(248, 53, 199);
+    transition: 0.7s;
+}
+
+.friday{
+    box-shadow: 0 0 20px rgb(52, 147, 202);
+    transition: 0.7s;
+}
+
+.draven{
+    box-shadow: 0 0 20px rgb(29, 201, 101);
+    transition: 0.7s;
 }
