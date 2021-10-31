@@ -37,16 +37,12 @@ body{
     text-shadow: 0 0 5px white;
 }
 
-.x{
-    margin: 0 50px;
-}
-
 .all_search{
     display: flex;
 }
 
 .login{
-    margin-left: 650px;
+    margin-left: 700px;
 }
 
 .sigin_steam{
@@ -59,10 +55,15 @@ body{
     align-items: center;
 }
 
+.profile{
+    background-color: white;
+    border-radius: 50%;
+}
+
 .slide{
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin-right: 300px;
     font-size: 32px;
     color: white;
 }
@@ -82,9 +83,8 @@ body{
 }
 
 .slider img {
-    margin: auto;
-    height: 140%;
-    width: 120%;
+    height: 100%;
+    width: 140%;
     vertical-align: top;
 }
 
