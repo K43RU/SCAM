@@ -1,0 +1,29 @@
+*{
+    color: white;
+}
+
+#loja{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    font-size: 40px;
+}
+
+.lol{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.img_skin_lol{
+    height: 400px;
+    width: 240px;
+    padding: 5px;
+    box-shadow: 0 0 3px violet;
+    margin-left: 50px;
+}
+
+.img_skin_lol:hover{
+    border: 1px white solid;
+    box-shadow: 0 0 3px white;
+}

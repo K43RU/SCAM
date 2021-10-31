@@ -75,6 +75,7 @@ body{
     margin: auto;
     margin-top: 20px;
     position: relative;
+    margin-left: 250px;
 }
 
 .slider li {
@@ -120,7 +121,7 @@ body{
 
 .slider li:nth-child(2) label {
     left: 45px;
-    bottom: 11px;
+    bottom: 10px;
 }
 
 .slider li:nth-child(3) label {
