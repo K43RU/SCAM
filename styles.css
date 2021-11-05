@@ -8,7 +8,9 @@
 }
 
 body{
-    background-color: #292828;
+    background-image: url(https://wallpaperforu.com/wp-content/uploads/2021/04/Wallpaper-Trees-Nature-Forest-Moon-Bw-Minimal-Wallpa4949.jpg);
+    background-color: #767676;
+    background-repeat: no-repeat;
 }
 
 .cabecalho{
@@ -42,17 +44,50 @@ body{
 }
 
 .login{
-    margin-left: 700px;
+    margin-left: 660px;
+    display: flex;
+}
+
+.login a{
+    text-decoration: none;
 }
 
 .sigin_steam{
     border-radius: 4px;
     border: unset;
-    background-color: rgb(189, 157, 78);
+    background-color: white;
     padding: 10px 18px;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
+}
+
+.sigin_steam:hover{
+    background-color: white;
+    box-shadow: 0 0 5px white;
+}
+
+.riot{
+    margin-left: 10px;
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+
+    border: none;
+    border-radius: 4px;
+}
+
+.riot:hover{
+    background-color: white;
+    box-shadow: 0 0 5px white;
+}
+
+.league{
+    margin-right: 5px;
 }
 
 .profile{
@@ -153,4 +188,61 @@ body{
 .draven{
     box-shadow: 0 0 20px rgb(29, 201, 101);
     transition: 0.7s;
+}
+
+footer{
+    margin-top: 90px;
+    background-color: rgb(102, 102, 102);
+}
+
+h2{
+    display: flex;
+    justify-content: start;
+    padding-left: 10px;
+}
+
+.contato{
+    margin-top: 20px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.info{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.digite{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.diga{
+    width: 250px;
+    height: 25px;
+}
+
+.digitado{
+    width: 280px;
+    height: 450px;
+    background-color: white;
+    margin-left: 50px;
+    margin-bottom: 25px;
+
+    border-radius: 4px;
+}
+
+.enviar{
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
 }
