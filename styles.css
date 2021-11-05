@@ -8,9 +8,8 @@
 }
 
 body{
-    background-image: url(https://wallpaperforu.com/wp-content/uploads/2021/04/Wallpaper-Trees-Nature-Forest-Moon-Bw-Minimal-Wallpa4949.jpg);
+    background-image: url(https://i.pinimg.com/originals/86/f4/fb/86f4fbea894c50d230d827d378ffbd5c.gif);
     background-color: #767676;
-    background-repeat: no-repeat;
 }
 
 .cabecalho{
@@ -192,13 +191,17 @@ body{
 
 footer{
     margin-top: 90px;
-    background-color: rgb(102, 102, 102);
+    background-color: #474645;
 }
 
 h2{
     display: flex;
     justify-content: start;
     padding-left: 10px;
+}
+
+h1{
+    color: white;
 }
 
 .contato{
@@ -231,6 +234,7 @@ h2{
     background-color: white;
     margin-left: 50px;
     margin-bottom: 25px;
+    margin-top: 20px;
 
     border-radius: 4px;
 }
