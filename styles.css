@@ -279,7 +279,7 @@ h1{
     display: flex;
     justify-content: end;
     margin-top: -450px;
-    margin-left: 1100px;
+    margin-left: 1050px;
     width: 280px;
     height: 450px;
     background-color: white;
@@ -308,7 +308,18 @@ h1{
 } 
 
 .num_cartao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 450px;
+    width: 190px;
+    margin-left: 550px;
+    margin-top: 100px;
+    color: white;
+}
+
+.num_cartao ~input{
+    color: black;
+}
+
+.info{
+    margin-bottom: 15px;
+    padding: 5px 15px;
 }

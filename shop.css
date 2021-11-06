@@ -32,11 +32,12 @@
     width: 240px;
     margin-left: 50px;
     border: 1px solid white;
+    transition: 0.5s;
 }
 
 .img_skin_lol:hover{
-    border: 1px purple solid;
-    box-shadow: 0 0 13px purple;
+    border: 1px rgb(98, 0, 255) solid;
+    box-shadow: 0 0 13px rgb(98, 0, 255);
     transition: 0.5s;
 }
 
@@ -66,6 +67,8 @@
     width: 240px;
     margin-left: 50px;
     border: 1px solid white;
+    
+    transition: 0.5s;
 }
 
 .img_skin_fort:hover{
@@ -79,6 +82,8 @@
     width: 700px;
     margin-left: 25px;
     border: 1px solid transparent;
+    
+    transition: 0.5s;
 }
 
 .img_skin_val:hover{
