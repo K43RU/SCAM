@@ -6,25 +6,31 @@
     <title>SCAM | Chat</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='main.js'></script>
+    <script src='pegar.js'></script>
 </head>
 <body>
-    <center><h1>CHAT</h1></center>
-
-    <form>
+    <h1 class="titulo">CHAT</h1>
 
         <div class="digitado">
-            
+            <p id="valor_digitado"></p>
         </div>
+
+        <div class="online">
+         <p class="text_online"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="20" height="20"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#2ecc71"><path d="M86,14.33333c-39.517,0 -71.66667,32.14967 -71.66667,71.66667c0,39.517 32.14967,71.66667 71.66667,71.66667c39.517,0 71.66667,-32.14967 71.66667,-71.66667c0,-39.517 -32.14967,-71.66667 -71.66667,-71.66667zM86,93.16667c-3.95958,0 -7.16667,-3.20708 -7.16667,-7.16667c0,-3.95958 3.20708,-7.16667 7.16667,-7.16667c3.95958,0 7.16667,3.20708 7.16667,7.16667c0,3.95958 -3.20708,7.16667 -7.16667,7.16667z"></path></g></g></svg>
+            online (0)</p>
+
+            <div class="lista"><img class="offline" src="https://img.icons8.com/ios/50/000000/offline.png"/></div>
+
+        </div>
+
 
         <div class="digite" >
-        <input class="diga" type="text" placeholder="Diga algo!">
-        <button class="enviar"><img height="20" width="20" src="https://img.icons8.com/ios-glyphs/30/000000/paper-plane.png"/></button>
+        <input class="diga" type="text" placeholder="Diga algo!" id="valor">
+        <input type="submit" class="enviar" onclick="capturar()"></input>
         </div>
-    </form>
 
-    <div class="online">
-        <div></div>
-    </div>
 </body>
 </html>

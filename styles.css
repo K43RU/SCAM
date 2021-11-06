@@ -239,14 +239,76 @@ h1{
     border-radius: 4px;
 }
 
+.digitado:hover{
+    box-shadow: 0 0 10px greenyellow;
+}
+
 .enviar{
     margin-left: 5px;
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 30px;
     background-color: white;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 2px;
+}
+
+#valor_digitado{
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+    border-radius: 3px;
+    
+    display: flex;
+    align-items: start;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+#digitando{
+    margin-top: 435px;
+}
+
+.online{
+    display: flex;
+    justify-content: end;
+    margin-top: -450px;
+    margin-left: 1100px;
+    width: 280px;
+    height: 450px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.online:hover{
+    box-shadow: 0 0 10px greenyellow;
+}
+
+.text_online{
+    margin-bottom: 20px;
+}
+
+.offline{
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+    margin-right: 120px;
+}  
+
+.diga textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.num_cartao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

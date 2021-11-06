@@ -90,3 +90,10 @@
 h1{
     color: white;
 }
+
+.num_cartao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 220px;
+}
