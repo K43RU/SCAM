@@ -2,18 +2,16 @@ var capturando = "";
 
 function capturar(){
 
+  if(capturando != " "){
     console.log("");
     capturando = document.getElementById('valor').value;
     document.getElementById('valor_digitado').innerHTML += capturando + "<br>";
 
-    document.getElementById('valor').value = "";
+    document.getElementById('valor').value = " ";
 
-    while(capturando == ""){
+  }else{
       alert ("digite algo antes de enviar!");
-
-      if(capturando == ""){
-        return false;
-        }
+      document.getElementById('valor_digitado').innerHTML += capturando;
     }
 }
 
