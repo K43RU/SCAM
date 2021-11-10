@@ -6,11 +6,14 @@ function capturar(){
     capturando = document.getElementById('valor').value;
     document.getElementById('valor_digitado').innerHTML += capturando + "<br>";
 
-    document.getElementById('valor').value = " ";
+    document.getElementById('valor').value = "";
 
-    while(capturando == null){
-        alert ("digite algo antes de enviar!");
-        return true;
+    while(capturando == ""){
+      alert ("digite algo antes de enviar!");
+
+      if(capturando == ""){
+        return false;
+        }
     }
 }
 
@@ -26,7 +29,7 @@ console.log('Server started at http://localhost:' + port);
 
 app.use("/admin", admin);
 
-app.use(express.static(join(__dirname, "/public")));
+app.use(express.static(join(__dirname, "/")));
 
 app.use((req, res) => {
   res.status(404);
