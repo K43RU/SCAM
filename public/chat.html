@@ -3,6 +3,7 @@
 <head>
     <title>SCAM | Chat</title>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src="index.js"></script>
 </head>
 <body>
     <h1 class="titulo">CHAT</h1>
@@ -37,6 +38,38 @@
                         document.getElementById('valor_digitado').innerHTML += capturando + "<br>";
                         document.getElementById('valor').value = " ";
                     }
+
+            var socket = io.connect();
+
+         $("form#chat").submit(function(e){
+              e.preventDefault();
+              socket.emit("enviar mensagem", $(this).find("#texto_mensagem").val(), function(){
+                   $("form#chat #texto_mensagem").val("");
+              });
+         });
+
+         var io = require('socket.io')(app);
+
+         
+
+        var usuarios = [];
+
+        io.on("connection", function(socket){
+        socket.on("entrar", function(apelido, callback){
+                if(!(apelido in usuarios)){
+        socket.apelido = apelido;
+                    usuarios[apelido] = socket;
+                    callback(true);
+                }else{
+                    callback(false);
+                }
+            });
+            socket.on("enviar mensagem", function(mensagem_enviada, callback){
+                mensagem_enviada = "[ " + pegarDataAtual() + " ] " + socket.apelido + " diz: " + mensagem_enviada;
+                io.sockets.emit("atualizar mensagens", mensagem_enviada);
+                callback();
+            });
+        });
         </script>
 
 </body>
