@@ -4,7 +4,7 @@
   "description": "",
   "main": "pegar.js",
   "scripts": {
-    "start": "node pegar.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/K43RU/SCAM#readme",
   "keywords": [],
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   },
   "devDependencies": {}
