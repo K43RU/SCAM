@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>SCAM | Chat</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script type="module" src='pegar.js'></script>
 </head>
 <body>
     <h1 class="titulo">CHAT</h1>
@@ -29,8 +25,19 @@
 
         <div class="digite" >
         <input class="diga" type="text" placeholder="Diga algo!" id="valor">
-        <input type="submit" class="enviar" onclick="capturar()">
+        <input type="submit" class="enviar" onclick="capturar()"></input>
         </div>
+
+        <script>
+            var capturando = "";
+
+                    function capturar(){
+                        console.log("");
+                        capturando = document.getElementById('valor').value;
+                        document.getElementById('valor_digitado').innerHTML += capturando + "<br>";
+                        document.getElementById('valor').value = " ";
+                    }
+        </script>
 
 </body>
 </html>
